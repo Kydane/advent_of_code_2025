@@ -66,7 +66,7 @@ public class Day6SolutionPart2 {
         List<List<SignificantInteger>> integerStream = new ArrayList<>();
         List<Operator> operatorStream = new ArrayList<>();
         int maxLength = 0;
-        try(BufferedReader br = new BufferedReader(new FileReader("day6/math.txt"))) {
+        try(BufferedReader br = new BufferedReader(new FileReader("day6/smallmath.txt"))) {
             String line = br.readLine();
             while (line != null) {
                 String nextLine = br.readLine();
@@ -107,7 +107,7 @@ public class Day6SolutionPart2 {
         operatorStream.forEach(operator -> masterSigDigits.add(operator.getSigDigits()));
 
 
-        try(BufferedReader br = new BufferedReader(new FileReader("day6/math.txt"))) {
+        try(BufferedReader br = new BufferedReader(new FileReader("day6/smallmath.txt"))) {
             String line = br.readLine();
             while (line != null) {
                 List<SignificantInteger> lineStream = new ArrayList<>();
